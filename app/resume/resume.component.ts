@@ -11,6 +11,9 @@ import { ContactInfo, Education, Objective, ProfessionalExperience } from './mod
 export class ResumeComponent implements OnInit{
     
     contactInfo : ContactInfo;
+    objective : Objective;
+    education: Education;
+    professionalExperience: ProfessionalExperience[];
 
     
     constructor(private resumeService: ResumeService) { }
@@ -19,5 +22,17 @@ export class ResumeComponent implements OnInit{
         this.resumeService
             .GetContactInfo()
             .then(r => this.contactInfo = r);
+
+        this.resumeService
+            .GetObjective()
+            .then(r => this.objective = r);
+
+        this.resumeService
+            .GetEducation()
+            .then(r => this.education = r);
+
+        this.resumeService
+            .GetProfessionalExperienceList()
+            .then(r => this.professionalExperience = r);
     }
 }

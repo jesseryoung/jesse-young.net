@@ -4,3 +4,33 @@
     {{contactInfo?.City}}, {{contactInfo?.State}} {{contactInfo?.Zip}} <br />
     {{contactInfo?.PhoneNumber}}
 </div>
+<div class="col-md-12">
+    <h2>Objective</h2>
+    {{objective?.Paragraph}}
+</div>
+
+<div class="col-md-12">
+    <h2>Education</h2>
+    {{education?.University}} <br />
+    Major : {{education?.Major}} <br />
+    Cumulative GPA: {{education?.GPA}} <br />
+    Graduation: {{education?.GraduationMonth}}, {{education?.GraduationYear}}
+</div>
+
+<div class="col-md-12">
+    <h2>Experience</h2>
+</div>
+<div *ngFor="let p of professionalExperience" class="col-md-12">
+    <div class="col-md-12">
+        {{p.Company.Name}} {{p.Company.City}}, {{p.Company.State}}
+    </div>
+    <div class="col-md-6"> 
+        <b>{{p.Title}}</b>
+    </div>
+    <div class="col-md-6 text-right">
+        {{p.StartDate }} - {{p.EndDate}}
+    </div>
+    <ul class="col-md-12">
+        <li *ngFor="let t of p.Tasks">{{t}}</li>
+    </ul>
+</div>

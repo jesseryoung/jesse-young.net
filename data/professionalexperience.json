@@ -1,0 +1,50 @@
+[
+    {
+        "Company": {
+            "Name": "1stAudit Inc.",
+            "City": "Buffalo",
+            "State": "MN"
+        },
+        "StartDate": "October 2007",
+        "EndDate": "November 2013",
+        "Title": "Software Developement/IT",
+        "Tasks": [
+            "Design, develop and implement software",
+            "Work with team to build and improve existing software",
+            "Manage and implement server hardware and software",
+            "Work and develop in multiple languages including Java, (Dot).Net Framework (VB, ASP, C#), C++, PHP, JavaScript and MSSQL."
+        ]
+    },
+    {
+        "Company": {
+            "Name": "Marshfield Clinic",
+            "City": "Marshfield",
+            "State": "WI"
+        },
+        "StartDate": "May 2011",
+        "EndDate": "March 2014",
+        "Title": "Senior Software Analyst",
+        "Tasks": [
+            "Develop patient focused medical applications",
+            "Worked on several critical projects as lead developer",
+            "Aid in creation and operation of developer practice initiatives including C# study groups and application lifecycle management workgroups."
+        ]
+    },
+    {
+        "Company": {
+            "Name": "MCIS Inc",
+            "City": "Marshfield",
+            "State": "WI"
+        },
+        "StartDate": "March 2014",
+        "EndDate": "Present",
+        "Title": "Solutions Architect",
+        "Tasks": [
+            "Lead software develpment teams delivering features for new products",
+            "Architect and help implement solutions related to patient engagement",
+            "Mentor and guide new software developers and interns",
+            "Define and help teach developer practice"
+        ]
+    }
+
+]

@@ -1,0 +1,16 @@
+.app-content {
+  padding: 20px;
+}
+
+md-card {
+  margin: 20px;
+}
+
+.experience {
+  display: flex;
+  flex-flow: row wrap;
+}
+.experience md-card {
+    width:400px;
+    box-sizing: border-box;
+}

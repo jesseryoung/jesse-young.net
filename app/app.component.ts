@@ -1,19 +1,13 @@
 import { Component } from '@angular/core';
-
 import { RouteConfig, ROUTER_DIRECTIVES } from '@angular/router-deprecated';
-
-
 import { ResumeComponent } from './resume/resume.component'
-
-
 
 @Component({
   selector: 'my-app',
   template: `
-    <h3>{{title}}</h3>
     <router-outlet></router-outlet>
   `,
-  directives: [ROUTER_DIRECTIVES]  
+  directives: [ROUTER_DIRECTIVES]
 })
 
 @RouteConfig([
@@ -22,5 +16,4 @@ import { ResumeComponent } from './resume/resume.component'
 
 
 export class AppComponent {
-  title = 'jesse-young.net'
 }

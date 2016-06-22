@@ -1,36 +1,43 @@
-<div class="col-md-4">
-    <b>Contact Address:</b> <br />
-    {{contactInfo?.Street}} <br />
-    {{contactInfo?.City}}, {{contactInfo?.State}} {{contactInfo?.Zip}} <br />
-    {{contactInfo?.PhoneNumber}}
-</div>
-<div class="col-md-12">
-    <h2>Objective</h2>
-    {{objective?.Paragraph}}
-</div>
+<div class="container">
+    <md-toolbar color="primary">
+        Jesse-Young.net
+    </md-toolbar>
+    <div class="app-content">
+        <md-card>
+            <md-card-title>Contact Address:</md-card-title>
+            <md-card-content>
+                {{contactInfo?.Street}} <br /> {{contactInfo?.City}}, {{contactInfo?.State}} {{contactInfo?.Zip}} <br />                {{contactInfo?.PhoneNumber}}
+            </md-card-content>
+        </md-card>
 
-<div class="col-md-12">
-    <h2>Education</h2>
-    {{education?.University}} <br />
-    Major : {{education?.Major}} <br />
-    Cumulative GPA: {{education?.GPA}} <br />
-    Graduation: {{education?.GraduationMonth}}, {{education?.GraduationYear}}
-</div>
+        <md-card>
+            <md-card-title>Objective</md-card-title>
+            <md-card-content>
+                {{objective?.Paragraph}}
+            </md-card-content>
+        </md-card>
 
-<div class="col-md-12">
-    <h2>Experience</h2>
-</div>
-<div *ngFor="let p of professionalExperience" class="col-md-12">
-    <div class="col-md-12">
-        {{p.Company.Name}} {{p.Company.City}}, {{p.Company.State}}
+        <md-card>
+            <md-card-title>Education</md-card-title>
+            <md-card-content>
+                {{education?.University}} <br /> Major : {{education?.Major}} <br /> Cumulative GPA: {{education?.GPA}} <br
+                /> Graduation: {{education?.GraduationMonth}}, {{education?.GraduationYear}}
+            </md-card-content>
+        </md-card>
+
+        <div class="experience">
+            <md-card *ngFor="let p of professionalExperience">
+                <md-card-title>{{p.Company.Name}} {{p.Company.City}}, {{p.Company.State}}</md-card-title>
+                <md-card-content>
+                    <b>{{p.Title}}</b> <br /> {{p.StartDate }} - {{p.EndDate}}
+                    <md-list>
+                        <md-list-item *ngFor="let t of p.Tasks">
+                            {{t}}
+                        </md-list-item>
+                    </md-list>
+                    
+                </md-card-content>
+            </md-card>
+        </div>
     </div>
-    <div class="col-md-6"> 
-        <b>{{p.Title}}</b>
-    </div>
-    <div class="col-md-6 text-right">
-        {{p.StartDate }} - {{p.EndDate}}
-    </div>
-    <ul class="col-md-12">
-        <li *ngFor="let t of p.Tasks">{{t}}</li>
-    </ul>
 </div>

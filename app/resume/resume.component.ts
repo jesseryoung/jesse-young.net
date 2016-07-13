@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ResumeService } from './resume-service';
-import { ContactInfo, Education, Objective, ProfessionalExperience } from './models/resume-models'
+import { ContactInfo, Education, Objective, ProfessionalExperience, Skill } from './models/resume-models'
 import { MD_CARD_DIRECTIVES } from '@angular2-material/card';
 import { MD_BUTTON_DIRECTIVES } from '@angular2-material/button';
 import { MD_TOOLBAR_DIRECTIVES } from '@angular2-material/toolbar';
@@ -22,6 +22,7 @@ export class ResumeComponent implements OnInit {
     objective: Objective;
     education: Education;
     professionalExperience: ProfessionalExperience[];
+    skills: Skill[];
 
 
     constructor(private resumeService: ResumeService) { }
@@ -42,5 +43,9 @@ export class ResumeComponent implements OnInit {
         this.resumeService
             .GetProfessionalExperienceList()
             .then(r => this.professionalExperience = r);
+
+        this.resumeService
+            .GetSkills()
+            .then(r => this.skills = r);
     }
 }

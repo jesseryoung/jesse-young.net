@@ -1,5 +1,5 @@
 import { Injectable }     from '@angular/core';
-import { ContactInfo, Education, Objective, ProfessionalExperience } from './models/resume-models'
+import { ContactInfo, Education, Objective, ProfessionalExperience, Skill } from './models/resume-models'
 import { Http, Response, Headers, RequestOptions } from '@angular/http';
 import 'rxjs/add/operator/toPromise';
 
@@ -8,6 +8,7 @@ export interface IResumeService {
     GetEducation() : Promise<Education>;
     GetObjective(): Promise<Objective>;
     GetProfessionalExperienceList() : Promise<ProfessionalExperience[]>;
+    GetSkills() : Promise<Skill[]>;
 }
 
 @Injectable()
@@ -35,6 +36,12 @@ export class ResumeService implements IResumeService {
     GetProfessionalExperienceList() : Promise<ProfessionalExperience[]> {
         return this.http
             .get('/data/professionalexperience.json')
+            .toPromise()
+            .then(res => res.json());
+    }
+    GetSkills() : Promise<Skill[]> {
+        return this.http
+            .get('/data/skills.json')
             .toPromise()
             .then(res => res.json());
     }

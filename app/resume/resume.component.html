@@ -20,11 +20,21 @@
         <md-card>
             <md-card-title>Education</md-card-title>
             <md-card-content>
-                {{education?.University}} <br /> Major : {{education?.Major}} <br /> Cumulative GPA: {{education?.GPA}} <br
-                /> Graduation: {{education?.GraduationMonth}}, {{education?.GraduationYear}}
+                {{education?.University}} <br /> Major : {{education?.Major}} <br /> Graduation: {{education?.GraduationMonth}}, {{education?.GraduationYear}}
             </md-card-content>
         </md-card>
-        <h2 md=subheader>Experience</h2>
+
+        <h2 md-subheader>Skills</h2>
+        <div class="experience">
+            <md-card *ngFor="let s of skills">
+                <md-card-title>{{s.Title}}</md-card-title>
+                <md-card-content>
+                    {{s.Skill}}
+                </md-card-content>
+            </md-card>    
+        </div>
+        
+        <h2 md-subheader>Experience</h2>
         <div class="experience">
             <md-card *ngFor="let p of professionalExperience">
                 <md-card-title>{{p.Company.Name}} {{p.Company.City}}, {{p.Company.State}}</md-card-title>

@@ -24,18 +24,19 @@
                 /> Graduation: {{education?.GraduationMonth}}, {{education?.GraduationYear}}
             </md-card-content>
         </md-card>
-
+        <h2 md=subheader>Experience</h2>
         <div class="experience">
             <md-card *ngFor="let p of professionalExperience">
                 <md-card-title>{{p.Company.Name}} {{p.Company.City}}, {{p.Company.State}}</md-card-title>
                 <md-card-content>
                     <b>{{p.Title}}</b> <br /> {{p.StartDate }} - {{p.EndDate}}
-                    <md-list>
-                        <md-list-item *ngFor="let t of p.Tasks">
-                            {{t}}
-                        </md-list-item>
-                    </md-list>
-                    
+                    <ul>
+                        <li *ngFor="let t of p.Tasks">
+                            <p>
+                                {{t}}
+                            </p>
+                        </li>
+                    </ul>
                 </md-card-content>
             </md-card>
         </div>

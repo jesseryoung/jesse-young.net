@@ -1,15 +1,15 @@
 [
     {
         "Title": ".Net and C#",
-        "Skill": "A deep understanding of .Net features as well as all C# language features. Helped design and deliver study groups around the .Net, C#, the CLR and the CLI. Have studied the garbage collector and a large portion of the base class libraries."
+        "Skill": "A deep understanding of .Net features as well as all C# language features. Helped design and facilitate study groups around the .Net, C#, the CLR and the CLI. Studied the garbage collector and a large portion of the .Net base class libraries."
     },
     {
         "Title": "Cloud Architecture",
-        "Skill": "Design architectures that scale in the cloud, taking advantage of many of the products offered in the Azure cloud platform. Implemented solutions that used Azure App Services, Cloud Services, Notification hubs, Search, Storage, DocumentDB, SQL, Application Insights and DNS."
+        "Skill": "Designed architectures that scale in the cloud, taking advantage of many of the products offered in the Azure cloud platform. Implemented solutions that used Azure App Services, Cloud Services, Notification hubs, Search, Storage, DocumentDB, SQL, Application Insights and DNS."
     },
     {
         "Title": "Application Lifecycle Management",
-        "Skill": "Studied and delivered study groups surrounding application lifecycle management. Helped to define the build/deploy/test pipeline implement inside of MCIS. Often looked to as a thought leader within the organization for providing guidance when development processes fail."
+        "Skill": "Studied and facilitated study groups surrounding application lifecycle management. Helped to define the build/deploy/test pipeline implemented inside of MCIS. Often looked to as a “thought leader” within the organization for providing guidance when development processes fail."
     },
     {
         "Title": "Leadership",

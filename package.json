@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Website for jesse-young.net",
   "scripts": {
-    "debug": "tsc && concurrently \"npm run tsc:w\" \"npm run lite\" ",
+    "dev": "tsc && concurrently \"npm run tsc:w\" \"npm run lite\" ",
     "lite": "lite-server /wwwroot",
     "postinstall": "typings install",
     "tsc": "tsc",

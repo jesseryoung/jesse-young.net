@@ -1,4 +1,5 @@
 var webpack = require('webpack');
+var path = require('path');
 
 module.exports = {
     entry: {
@@ -18,13 +19,13 @@ module.exports = {
         ]
     },
     output: {
-        path: './dist/',
+        path: path.join(__dirname, 'dist'),
         filename: '[name].js',
         library: '[name]_[hash]'
     },
     plugins: [
         new webpack.DllPlugin({
-            path: './dist/[name]-manifest.json',
+            path: path.join(__dirname, 'dist', '[name]-manifest.json'),
             name: '[name]_[hash]'
         }),
         new webpack.optimize.UglifyJsPlugin({

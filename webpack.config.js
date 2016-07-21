@@ -22,7 +22,7 @@ module.exports = {
     },
     plugins: [
         new webpack.DllReferencePlugin({
-            context: '.',
+            context: ___dirname,
             manifest: require('./dist/vendor-manifest.json')
         })
     ]

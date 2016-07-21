@@ -10,6 +10,9 @@
     "webpack": "webpack --display-modules",
     "webpack-vendor": "webpack --config webpack.config.vendor.js --display-modules"
   },
+  "engines": {
+    "node" : ">=6.2.1"
+  },
   "author": "Jesse Young",
   "license": "ISC",
   "dependencies": {

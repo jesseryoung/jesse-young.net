@@ -9,7 +9,7 @@ module.exports = {
             'reflect-metadata',
             'rxjs/add/operator/toPromise',
             '@angular/core', 
-            '@angular/router-deprecated', 
+            '@angular/router', 
             '@angular/platform-browser-dynamic', 
             '@angular/http', 
             '@angular2-material/icon', 

@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { RouteConfig, ROUTER_DIRECTIVES } from '@angular/router-deprecated';
-import { ResumeComponent } from './resume/resume.component'
+import { ROUTER_DIRECTIVES } from '@angular/router';
 
 @Component({
   selector: 'my-app',
@@ -9,10 +8,6 @@ import { ResumeComponent } from './resume/resume.component'
   `,
   directives: [ROUTER_DIRECTIVES]
 })
-
-@RouteConfig([
-  { path: '/resume', name: 'Resume', component: ResumeComponent, useAsDefault: true }
-])
 
 
 export class AppComponent {

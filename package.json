@@ -11,7 +11,7 @@
     "webpack-vendor": "webpack --config webpack.config.vendor.js --display-modules"
   },
   "engines": {
-    "node" : ">=6.2.1"
+    "node" : "5.9.0"
   },
   "author": "Jesse Young",
   "license": "ISC",

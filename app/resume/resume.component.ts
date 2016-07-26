@@ -10,8 +10,8 @@ import { MdIcon } from '@angular2-material/icon';
 
 @Component({
     selector: 'resume',
-    templateUrl: 'app/resume/resume.component.html',
-    styleUrls: ['app/resume/resume.component.css'],
+    template: require('./resume.component.html'),
+    styles: [ require('./resume.component.css') ],
     directives: [MD_CARD_DIRECTIVES, MD_BUTTON_DIRECTIVES, MdIcon, MD_TOOLBAR_DIRECTIVES, MD_LIST_DIRECTIVES]
 })
 

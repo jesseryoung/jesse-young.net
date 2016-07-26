@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "Website for jesse-young.net",
   "scripts": {
-    "dev": "webpack-dev-server --inline --hot --output-public-path=/dist/ --history-api-fallback",
+    "dev": "webpack-dev-server --inline --hot --progress",
     "postinstall": "typings install",
     "typings": "typings",
-    "build": "webpack --config webpack.config.vendor.js && webpack" ,
+    "build": "webpack --config webpack.prod.config.js --progress --profile --bail",
     "webpack": "webpack --display-modules",
     "webpack-vendor": "webpack --config webpack.config.vendor.js --display-modules"
   },
@@ -36,12 +36,17 @@
     "zone.js": "^0.6.12"
   },
   "devDependencies": {
-    "extract-text-webpack-plugin": "^1.0.1",
-    "raw-loader": "^0.5.1",
-    "ts-loader": "^0.8.2",
-    "typescript": "^1.8.10",
-    "typings": "^1.0.4",
-    "webpack": "^1.13.1",
-    "webpack-dev-server": "^1.14.1"
+    "extract-text-webpack-plugin": "latest",
+    "webpack-merge": "latest",
+    "html-webpack-plugin": "latest",
+    "html-loader": "latest",
+    "raw-loader": "latest",
+    "ts-loader": "latest",
+    "style-loader": "latest",
+    "typescript": "latest",
+    "typings": "latest",
+    "webpack": "latest",
+    "webpack-dev-server": "latest",
+    "webpack-cleanup-plugin": "latest"
   }
 }
